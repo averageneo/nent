@@ -1,0 +1,55 @@
+version: "3.7"
+
+volumes:
+  database:
+  redis:
+
+
+services:
+  redis:
+    image: redis:alpine
+    command: redis-server
+    container_name: 'nent-redis'
+    restart: 'always'
+    ports:
+      - 6379:6379
+    volumes:
+      - redis:/var/lib/redis
+
+  node:
+    image: back-end
+    container_name: 'nent-node'
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    restart: 'no'
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+    environment:
+      - DATABASE_URL=nent-postgres
+      - DATABASE_PORT=5432
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=postgres
+      - DATABASE_DATABASE=postgres
+      - REDIS_HOST=nent-redis
+      - TMDB_API=https://api.themoviedb.org/3
+      - TMDB_API_KEY=c659366a3c404398baa9d1ad97d6d46d
+  
+
+  postgres:
+    image: postgres:12-alpine
+    container_name: 'nent-postgres'
+    restart: 'no'
+    volumes:
+      - database:/var/lib/postgresql/data:z
+      - ./testdb.sql:/docker-entrypoint-initdb.d/testdb.sql
+
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      
