@@ -58,6 +58,14 @@ GET 127.0.0.1:3000/trailers?viaplay_url=https://content.viaplay.se/pc-se/film/ar
 npm run test
 ```
 
+
+<br>
+<br>
+<br>
+<br>
+
+<p>P.S: Tests are next to our service and controller under <strong>src/modules/trailers</strong> directory</p>
+
 ### Credits
 
 Author: Hossein Heydari
