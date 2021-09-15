@@ -8,11 +8,15 @@
 
 <h3>What if we don't have the data in the cache?</h3>
 <p>Well, the Redis docker instance has volumed, so data will not be lost, however our cache has a lifetime(We can increase the data lifetime or make it everlasting), if cached data lifespan is finished, the code would still be very fast as we keep data in a postgres database. so again we wouldn't need to go through all the logic</p>
+<hr>
 
 ### Run
 
 <p>Rhe project is dockerized, you need to make sure you have docker and docker-compose installed on your machine, enter the commands below in the root directory of the project:</p>
 
+<br>
+<br>
+<br>
 
 **P.S: make sure ports 5432, 3000 and 6379 are not busy.**
 
@@ -24,6 +28,7 @@ stop:
 ```
 docker-compose down
 ```
+<hr>
 
 ### API Endpoint
 
@@ -44,7 +49,7 @@ GET 127.0.0.1:3000/trailers?viaplay_url=https://content.viaplay.se/pc-se/film/ar
 ```
 
 
-
+<hr>
 ### Unit-Tests
 
 <p>I have implemented Factory Method Pattern which is a creational design pattern for unit testing hence we don't need to hardcode properties of classes to create testing objects.</p>
@@ -67,6 +72,7 @@ npm run test
 <br>
 
 <p>P.S: Tests are next to our service and controller under <strong>src/modules/trailers</strong> directory</p>
+<hr>
 
 ### Credits
 
