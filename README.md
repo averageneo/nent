@@ -50,6 +50,7 @@ GET 127.0.0.1:3000/trailers?viaplay_url=https://content.viaplay.se/pc-se/film/ar
 
 
 <hr>
+
 ### Unit-Tests
 
 <p>I have implemented Factory Method Pattern which is a creational design pattern for unit testing hence we don't need to hardcode properties of classes to create testing objects.</p>
