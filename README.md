@@ -50,6 +50,10 @@ GET 127.0.0.1:3000/trailers?viaplay_url=https://content.viaplay.se/pc-se/film/ar
 <p>I have implemented Factory Method Pattern which is a creational design pattern for unit testing hence we don't need to hardcode properties of classes to create testing objects.</p>
 <p>NestJs itself uses Dependency Injection Design Pattern so our codebase is super clean</p>
 
+<br>
+<br>
+<br>
+
 **P.S:You have to make sure the docker instances are up before running the unit-tests**
 
 <p>Run the command below in the root directory of the project to run tests while docker-compose is up:</p>
@@ -59,8 +63,6 @@ npm run test
 ```
 
 
-<br>
-<br>
 <br>
 <br>
 
