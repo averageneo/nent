@@ -12,7 +12,7 @@
 
 ### Run
 
-<p>Rhe project is dockerized, you need to make sure you have docker and docker-compose installed on your machine, enter the commands below in the root directory of the project:</p>
+<p>The project is dockerized, you need to make sure you have docker and docker-compose installed on your machine, enter the commands below in the root directory of the project:</p>
 
 <br>
 <br>
@@ -20,10 +20,12 @@
 
 **P.S: make sure ports 5432, 3000 and 6379 are not busy.**
 
+To run: 
+
 ```
 docker-compose up --force-recreate --build -d
 ```
-stop: 
+To stop: 
 
 ```
 docker-compose down
