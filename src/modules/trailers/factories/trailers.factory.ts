@@ -1,4 +1,4 @@
-import { factoryRegistery } from '../../core/test_utils';
+import { factoryRegistery } from '../../../core/test_utils';
 import { TrailersEntity } from '../entities/trailers.entity';
 
 factoryRegistery.register(TrailersEntity, ({ ch, override = {} }) => {

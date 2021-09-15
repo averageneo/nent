@@ -4,7 +4,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { TrailersEntity } from '../entities/trailers.entity';
 import axios, { AxiosResponse } from 'axios';
-import { configService } from '../../core/config';
+import { configService } from '../../../core/config';
 
 @Injectable()
 export class TrailersService {

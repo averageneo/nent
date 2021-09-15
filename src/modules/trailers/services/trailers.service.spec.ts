@@ -3,7 +3,7 @@ import { AppModule } from './../../../app.module';
 import { HttpException, HttpStatus, INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { factoryRegistery } from '../../core/test_utils';
+import { factoryRegistery } from '../../../core/test_utils';
 import { Connection } from 'typeorm';
 import { TrailersEntity } from '../entities/trailers.entity';
 import { TrailersService } from './trailers.service';
