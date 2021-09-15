@@ -7,7 +7,7 @@
 <p>Clustering part aside, when you are about to handle millions of requests, on this case you would like to cache requests on Redis. first time a user asks for a trailer it may take a couple of seconds, but the next time the request is cached hence the response would be  million times better.</p>
 
 <h3>What if we don't have the data in the cache?</h3>
-<p>Well, the Redis docker instance has volume, so data will not be lost, however our cache has a lifetime(We can increase the data lifetime or make it everlasting), if cached data lifespan is finished, the code would still be very fast as we keep data in a postgres database. so again we wouldn't need to go through all the logic</p>
+<p>Well, the Redis docker instance has volume, so data will not be lost, however our cache has a lifetime(We can increase the data lifetime or make it everlasting), if cached data lifespan is finished, the reponse still would be very fast as we keep data in a postgres database. we wouldn't need to go through all the logic over again</p>
 <hr>
 
 ### Run
