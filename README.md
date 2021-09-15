@@ -14,7 +14,7 @@
 <p>Rhe project is dockerized, you need to make sure you have docker and docker-compose installed on your machine, enter the commands below in the root directory of the project:</p>
 
 
-P.S: make sure ports 5432, 3000 and 6379 are not busy.
+<bold>P.S: make sure ports 5432, 3000 and 6379 are not busy.</bold>
 
 ```
 docker-compose up --force-recreate --build -d
@@ -30,8 +30,9 @@ docker-compose down
 <p>You will need to make GET request to the base url of <code>127.0.0.1:3000/trailers</code> and your viaplay link as <strong>query string</strong> to the key of <code>viaplay_url</code>.</p>
 
 <p>Template:</p>
+
 ```
-127.0.0.1:3000/trailers?viaplay_url=<strong>VIAPLAY_URL</strong>
+127.0.0.1:3000/trailers?viaplay_url=VIAPLAY_URL
 ```
 
 <p>Instead of that VIAPLAY_URL in the address above, place your own url from viaplay. </p>
@@ -49,7 +50,7 @@ GET 127.0.0.1:3000/trailers?viaplay_url=https://content.viaplay.se/pc-se/film/ar
 <p>I have implemented Factory Method Pattern which is a creational design pattern for unit testing hence we don't need to hardcode properties to create classs.</p>
 <p>NestJs itself uses Dependency Injection Design Pattern so our codebase is super clean</p>
 
-P.S:You have to make sure the docker instances are up before running the unit-tests
+<bold>P.S:You have to make sure the docker instances are up before running the unit-tests</bold>
 
 <p>Run the command below in the root directory of the project to run tests while docker-compose is up:</p>
 
@@ -60,4 +61,5 @@ npm run test
 ### Credits
 
 Author: Hossein Heydari
+<br>
 Email: binary01ninja@gmail.com
