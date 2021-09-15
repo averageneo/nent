@@ -14,7 +14,7 @@
 <p>Rhe project is dockerized, you need to make sure you have docker and docker-compose installed on your machine, enter the commands below in the root directory of the project:</p>
 
 
-<bold>P.S: make sure ports 5432, 3000 and 6379 are not busy.</bold>
+**P.S: make sure ports 5432, 3000 and 6379 are not busy.**
 
 ```
 docker-compose up --force-recreate --build -d
@@ -50,7 +50,7 @@ GET 127.0.0.1:3000/trailers?viaplay_url=https://content.viaplay.se/pc-se/film/ar
 <p>I have implemented Factory Method Pattern which is a creational design pattern for unit testing hence we don't need to hardcode properties to create classs.</p>
 <p>NestJs itself uses Dependency Injection Design Pattern so our codebase is super clean</p>
 
-<bold>P.S:You have to make sure the docker instances are up before running the unit-tests</bold>
+**P.S:You have to make sure the docker instances are up before running the unit-tests**
 
 <p>Run the command below in the root directory of the project to run tests while docker-compose is up:</p>
 
