@@ -47,7 +47,7 @@ GET 127.0.0.1:3000/trailers?viaplay_url=https://content.viaplay.se/pc-se/film/ar
 
 ### Unit-Tests
 
-<p>I have implemented Factory Method Pattern which is a creational design pattern for unit testing hence we don't need to hardcode properties to create classs.</p>
+<p>I have implemented Factory Method Pattern which is a creational design pattern for unit testing hence we don't need to hardcode properties of classes to create testing objects.</p>
 <p>NestJs itself uses Dependency Injection Design Pattern so our codebase is super clean</p>
 
 **P.S:You have to make sure the docker instances are up before running the unit-tests**
