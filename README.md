@@ -76,9 +76,3 @@ npm run test
 
 <p>P.S: Tests are next to our service and controller under <strong>src/modules/trailers</strong> directory</p>
 <hr>
-
-### Credits
-
-Author: Hossein Heydari
-<br>
-Email: binary01ninja@gmail.com
